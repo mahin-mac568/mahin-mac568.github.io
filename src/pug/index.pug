@@ -1,0 +1,239 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Mahin Chowdhury
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+            .container
+                a.navbar-brand(href='#page-top') Mahin's Website
+                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu 
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ms-auto
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') About
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') Portfolio
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Education
+
+        // Masthead
+        header.masthead.bg-primary.text-white.text-center
+              .container.d-flex.align-items-center.flex-column
+                // Masthead Avatar Image
+                img.masthead-avatar.mb-5(src='assets/img/headshot.jpg', alt='...')
+                // Masthead Heading
+                h1.masthead-heading.text-uppercase.mb-0 Mahin Chowdhury
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Masthead Subheading
+                p.masthead-subheading.font-weight-light.mb-0 Cornell Engineer - Programmer - Game Designer 
+
+        // Portfolio Section
+        section#portfolio.page-section.portfolio
+            .container
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase About Me
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ms-auto
+                        p.lead
+                            | I am a passionate problem-solver. I love working with others and demonstrating two main things: my programming skills and my enthusiasm for the adventure. In my head, every project starts with an ambition to make something you didn't know was possible for you before. This mindset has brought me to where I am now — eagerly awaiting my next programming role.
+                    .col-lg-4.me-auto
+                        p.lead
+                            | Over the last few years, I have worked on several different teams to build some of my most exciting and rigorous projects. When it comes to the games I've developed, I have worked with other programmers, digital artists, and sound designers to assemble impressive, fun-to-play games. I have also created some useful programs such as a game recommender search engine, a smart traffic light system, and a model depicting the impact of COVID-19. 
+
+        // About Section
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+                // Portfolio Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.text-white.mb-0 My Portfolio
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Instructions 
+                h5.text-center.text-secondary.text-white.mb-0 Click on them! 
+                <br><br>
+                // Portfolio Grid Items
+                .row.justify-content-center
+                    // Portfolio Item 1
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/traffic_light.png', alt='...')
+                    // Portfolio Item 2
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/search_engine.png', alt='...')
+                    // Portfolio Item 3
+                    .col-md-6.col-lg-4.mb-5
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/pokemon.png', alt='...')
+                    // Portfolio Item 4
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/world.png', alt='...')
+                    // Portfolio Item 5
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/simeow.png', alt='...')
+                    // Portfolio Item 6
+                    .col-md-6.col-lg-4
+                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
+                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+                                .portfolio-item-caption-content.text-center.text-white
+                                    //- i.fas.fa-plus.fa-3x
+                            img.img-fluid(src='assets/img/portfolio/covid.png', alt='...')
+
+        // Contact Section
+        section#contact.page-section
+            .container
+                // Contact Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Education
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ms-auto.ps-10
+                        p.lead
+                            | CS 1109 <br>
+                            | CS 1110 <br> 
+                            | CS 2024 <br> 
+                            | CS 2043 <br> 
+                            | CS 2110 <br>
+                            | CS 2800 <br> 
+                            | CS 3110 <br> 
+                            | CS 3300 <br> 
+                            | CS 3410 <br>
+                            | CS 4300 <br> 
+                            | CS 4320 <br>
+                            | CS 4414 <br> 
+                            | CS 4700 <br> 
+                            | CS 4820 <br>
+                            
+                    .col-lg-4.me-auto.pe-10
+                        p.lead
+                            | Fundamental Programming Concepts <br>
+                            | Introduction to Computing Using Python <br> 
+                            | C++ Programming <br> 
+                            | Unix Tools and Scripting <br> 
+                            | OOP and Data Structures <br> 
+                            | Discrete Structures <br> 
+                            | Data Structures and Functional Programming <br> 
+                            | Data-Driven Web Applications <br> 
+                            | Computer System Organization <br> 
+                            | Language and Information <br> 
+                            | Database Systems <br> 
+                            | Systems Programming <br> 
+                            | Artificial Intelligence <br> 
+                            | Analysis of Algorithms 
+
+
+        // Footer
+        footer.footer.text-center
+            .container
+                .row
+                    // Footer Location
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Location
+                        p.lead.mb-0
+                            | 315 Alice H. Cook House
+                            br
+                            | Ithaca, NY 14853
+                    // Footer Social Icons
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Where else to find me
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-facebook-f
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-twitter
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-linkedin-in
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-dribbble
+                    // Footer About Text
+                    .col-lg-4
+                        h4.text-uppercase.mb-4 Inquiries 
+                        p.lead.mb-0
+                            | I am looking to do a summer internship or a full time job in software engineering. Feel free to reach out to me for software engineering projects and recruitment!
+
+        // Copyright Section
+        div.copyright.py-4.text-center.text-white
+            .container
+                small Copyright &copy; Mahin's Website 2021
+
+        // Portfolio Modals
+        include includes/portfolio-modal-1.pug
+        include includes/portfolio-modal-2.pug
+        include includes/portfolio-modal-3.pug
+        include includes/portfolio-modal-4.pug
+        include includes/portfolio-modal-5.pug
+        include includes/portfolio-modal-6.pug
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        // * *                               SB Forms JS                               * *
+        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
+        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

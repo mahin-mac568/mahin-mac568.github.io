@@ -1,0 +1,29 @@
+// Portfolio Modal 3
+#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal3', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Text-Based Pokemon Battle Game
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/pokemon2.png', alt='...')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Here, I programmed an interactive-fiction battle game, where users type natural-language commands and the game responds with text.
+                                | I implemented this using modules, compilation units, and self-coded data types; I also used a large-scale test suite to ensure proper functionality.
+                                | My favorite part was creating a complex, manually coded game-loop that begins, progresses, and ends the game; this was fun and challenging, considering the other games I made had built-in update functions (in Unity) that looped the game states for me. 
+
+                            //- button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
+                            //-     i.fas.fa-times.fa-fw
+                            //-     | Close Window

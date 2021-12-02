@@ -1,0 +1,29 @@
+// Portfolio Modal 2
+#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal2', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Game Recommender Search Engine
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/engine2.png', alt='...')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | My partner and I built a full-stack web application that recommends games (board, video, mobile games) based on user searches and filtered preferences.
+                                | My partner implemented the front end interface, whereas I coded the backend functionality; I used jaccard similarity, cosine similarity, boolean search, edit distance, and sentiment analysis algorithms to generate the results. 
+                               
+
+                            //- button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
+                            //-     i.fas.fa-times.fa-fw
+                            //-     | Close Window

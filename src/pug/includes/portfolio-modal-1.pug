@@ -1,0 +1,29 @@
+// Portfolio Modal 1
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Smart Traffic Light System
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/tf2.png', alt='...')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | More and more cities are becoming “smart urban infrastructures” that use computing to reduce clutter and improve functionality.
+                                | One dimension of this is to make the traffic lights at intersections smarter. Rather than having the lights use fixed timing (for example 60s green, then 10s yellow, then 70s red),
+                                | the city would prefer that green/red periods be variable so that an intersection with lots of cars
+                                | coming from one side could stay green longer for the busier street.
+                            //- button.btn.btn-primary(href='#!', data-bs-dismiss='modal')
+                            //-     i.fas.fa-times.fa-fw
+                            //-     | Close Window
