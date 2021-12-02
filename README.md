@@ -3,8 +3,8 @@
 ## Quickstart Guide
 ### 1. Cloning the repository from GitHub
 ```bash
-git clone https://github.com/mahin-mac568/PW.git
-cd PW 
+git clone https://github.com/mahin-mac568/mahin-mac568.github.io.git
+cd mahin-mac568.github.io 
 ```
 ### 2. Running the website locally  
 ```
